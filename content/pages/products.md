@@ -28,4 +28,3 @@ seo:
 
 type: PageLayout
 ---
-
