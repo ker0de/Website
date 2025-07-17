@@ -49,4 +49,5 @@ export const iconMap = {
     twitter: Twitter,
     vimeo: Vimeo,
     youtube: YouTube
+    whatsapp: WhatsApp
 };
