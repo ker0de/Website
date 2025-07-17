@@ -8,7 +8,16 @@ export default function Social(props) {
     const IconComponent = iconMap[icon];
     const fieldPath = props['data-sb-field-path'];
     const annotations = fieldPath
-        ? { 'data-sb-field-path': [fieldPath, `${fieldPath}.url#@href`, `${fieldPath}.altText#@aria-label`, `${fieldPath}.elementId#@id`].join(' ').trim() }
+        ? {
+              'data-sb-field-path': [
+                  fieldPath,
+                  `${fieldPath}.url#@href`,
+                  `${fieldPath}.altText#@aria-label`,
+                  `${fieldPath}.elementId#@id`
+              ]
+                  .join(' ')
+                  .trim()
+          }
         : {};
 
     return (
@@ -31,7 +40,18 @@ export default function Social(props) {
             aria-label={altText}
             {...annotations}
         >
-            {IconComponent && <IconComponent className="shrink-0 fill-current w-[1em] h-[1em]" {...(fieldPath && { 'data-sb-field-path': '.icon' })} />}
+            {IconComponent && (
+                <IconComponent
+                    className="shrink-0 fill-current w-[1em] h-[1em]"
+                    {...(fieldPath && { 'data-sb-field-path': '.icon' })}
+                />
+            )}
+            {altText && (
+                <span className="ml-2 text-sm text-white">
+                    {altText}
+                </span>
+            )}
         </Link>
     );
 }
+
