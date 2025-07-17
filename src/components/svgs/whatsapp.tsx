@@ -1,4 +1,4 @@
-// src/svgs/WhatsAppIcon.tsx
+// src/components/svgs/WhatsApp.tsx
 import * as React from 'react';
 
 export default function WhatsAppIcon(props: React.SVGProps<SVGSVGElement>) {
