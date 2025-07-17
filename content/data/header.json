@@ -19,7 +19,13 @@
     "label": "Products",
     "url": "/products",
     "type": "Link"
+  },
+          {
+    "label": "Contact",
+    "url": "/contact",
+    "type": "Link"
   }
+
     ],
     "secondaryLinks": [],
     "variant": "logo-left-primary-nav-centered",
