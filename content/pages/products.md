@@ -8,7 +8,7 @@ sections:
       type: TitleBlock
       color: text-danger
     text: >
-      This is a temporary test section to verify deployment. If you're seeing this block, your edits are working.
+      This is a temporary test section to verify deployment.
     colors: bg-warning-fg-dark
     styles:
       self:
